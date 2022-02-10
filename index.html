@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="style/app.css" />
+
+		<title>Coding Challenge | Star Rating</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title bold">The Minimalist Engineer</div>
+			<div class="information-container">
+				<div class="total-rating-container">
+					<div class="title" id="total-rating-container">0.0</div>
+					<div class="rating-container" id="total-rating-star"></div>
+				</div>
+				<div>
+					<button class="button bold" id="add-review-button">Add review</button>
+				</div>
+			</div>
+
+      <div id="review-list-container"></div>
+		</div>
+
+		<div class="modal-container hide-modal" id="modal">
+			<div class="modal">
+				<div class="modal-header">
+          <div class="title bold">What's your rating</div>
+          <div id="close-modal-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="close-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </div>
+        </div>
+        <form class="form" id="review-form">
+          <div class="form-group">
+            <div>Rating</div>
+            <div class="stars">
+              <div>⭐</div>
+              <div>⭐</div>
+              <div>⭐</div>
+              <div>⭐</div>
+              <div>⭐</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div>Review</div>
+            <div>
+              <input type="text" placeholder="Start typing..." class="form-control" id="review-input" autocomplete="off">
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="button bold">Submit review</button>
+          </div>
+        </form>
+		</div>
+
+
+    <script src="js/element.js"></script>
+		<script src="js/app.js" type="module"></script>
+	</body>
+</html>
